@@ -8,6 +8,7 @@
         <variable
             name="viewModel"
             type="com.example.mvvm_template.viewModel.MyViewModel" />
+
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -34,7 +35,7 @@
             android:id="@+id/button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:onClick='@{() -> viewModel.search("a", "b")}'
+            android:onClick='@{() -> viewModel.search("testValue1", "testValue2")}'
             android:text="Button"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

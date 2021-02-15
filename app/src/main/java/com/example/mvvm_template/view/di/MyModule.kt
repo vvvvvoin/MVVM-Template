@@ -1,6 +1,7 @@
 package com.example.mvvm_template.view.di
 
 import com.example.mvvm_template.model.api.MyAPIService
+import com.example.mvvm_template.repository.RemoteRepository
 import com.example.mvvm_template.viewModel.MyViewModel
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
@@ -40,8 +41,12 @@ var retrofitPart = module {
     single{myApi }
 }
 
+val remoteRepository = module {
+    factory { RemoteRepository(get()) }
+}
+
 val viewModelModule = module {
     viewModel { MyViewModel(get())}
 }
 
-var myDiModule = listOf(viewModelModule,  retrofitPart)
+var myDiModule = listOf(viewModelModule,  remoteRepository, retrofitPart)

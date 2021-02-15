@@ -6,7 +6,7 @@
     <data>
         <variable
             name="item"
-            type="com.example.mvvm_template.model.model.Person" />
+            type="com.example.mvvm_template.model.dataModel.Person" />
     </data>
 
     <LinearLayout

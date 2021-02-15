@@ -1,6 +1,6 @@
 package com.example.mvvm_template.viewModel.mapper
 
-import com.example.mvvm_template.model.model.Result
+import com.example.mvvm_template.model.dataModel.Result
 
 abstract class NetworkBaseMapper<R> {
     fun map(data: retrofit2.Response<R>): Result<R> {

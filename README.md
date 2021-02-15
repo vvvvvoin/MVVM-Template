@@ -20,4 +20,5 @@
 ## 문제점
 
 - 기능을 추가할수록 ViewModel에 중복코드가 생긴다.
-  - usecase를 추가하여 viewModel에 생기는 중복코드를 제거
+  - remoteRepository를 이용하여 보완함
+

@@ -4,7 +4,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.mvvm_template.databinding.PersonItemBinding
-import com.example.mvvm_template.model.model.Person
+import com.example.mvvm_template.model.dataModel.Person
 
 class PersonListAdapter : RecyclerView.Adapter<PersonListAdapter.ItemHolder>() {
 

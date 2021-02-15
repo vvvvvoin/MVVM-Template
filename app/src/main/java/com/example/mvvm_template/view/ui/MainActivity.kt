@@ -35,10 +35,6 @@ class MainActivity : AppCompatActivity() {
             setHasFixedSize(true)
         }
         initObserver()
-
-        /*  다음으로 실행
-        myViewModel.search("", "")
-        * */
     }
 
     private fun initObserver() {

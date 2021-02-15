@@ -2,7 +2,7 @@ package com.example.mvvm_template.view.ui
 
 import androidx.databinding.BindingAdapter
 import androidx.recyclerview.widget.RecyclerView
-import com.example.mvvm_template.model.model.Person
+import com.example.mvvm_template.model.dataModel.Person
 import com.example.mvvm_template.view.adapter.PersonListAdapter
 
 
