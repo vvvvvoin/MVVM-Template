@@ -2,15 +2,17 @@ package com.example.mvvm_template.view.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.EventLog
 import android.widget.Toast
+import androidx.annotation.Dimension
+import androidx.core.view.get
 import androidx.databinding.DataBindingUtil
 import com.example.mvvm_template.R
 import com.example.mvvm_template.databinding.ActivityMainBinding
-import com.example.mvvm_template.util.Event
+import com.example.mvvm_template.databinding.ActivityMainBindingImpl
 import com.example.mvvm_template.util.EventObserver
 import com.example.mvvm_template.view.adapter.PersonListAdapter
 import com.example.mvvm_template.viewModel.MyViewModel
+import kotlinx.android.synthetic.main.test.view.*
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class MainActivity : AppCompatActivity() {

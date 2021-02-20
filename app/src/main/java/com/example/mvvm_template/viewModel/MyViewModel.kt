@@ -1,6 +1,8 @@
 package com.example.mvvm_template.viewModel
 
 import android.annotation.SuppressLint
+import androidx.databinding.Bindable
+import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import com.example.mvvm_template.model.dataModel.Person
@@ -19,6 +21,10 @@ class MyViewModel(
     private val _personData = MutableLiveData<List<Person>>()
     val personData: LiveData<List<Person>>
         get() = _personData
+
+    val searchQuery = MutableLiveData<String>()
+
+    init { searchQuery.value = "" }
 
     fun search(argument1: String, argument2: String) {
         remoteRepository.search(argument1, argument2).subscribe({

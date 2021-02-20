@@ -3,6 +3,7 @@ package com.example.mvvm_template.view.di
 import com.example.mvvm_template.model.api.MyAPIService
 import com.example.mvvm_template.repository.RemoteRepository
 import com.example.mvvm_template.viewModel.MyViewModel
+import hu.akarnokd.rxjava3.retrofit.RxJava3CallAdapterFactory
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import org.koin.androidx.viewmodel.ext.koin.viewModel
@@ -32,7 +33,7 @@ val retrofit: Retrofit = Retrofit
     .baseUrl("https://www.naver.com/")
     .client(client)
     .addConverterFactory(GsonConverterFactory.create())
-    .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
+    .addCallAdapterFactory(RxJava3CallAdapterFactory.create())
     .build()
 
 private val myApi: MyAPIService = retrofit.create(MyAPIService::class.java)

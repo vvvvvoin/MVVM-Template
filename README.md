@@ -11,11 +11,12 @@
 - ReactiveX
 - Android AC - DataBinding, ViewMode, LiveData
 
-## 용도
+## 템플릿 용도
 
-- Restful API를 이용할 수 있는 구조
+- Restful API를 이용
   - 에러발생시 Event처리
 - RecyclerView에 적용되는 DataBinding
+- 양방향 데이터바인딩
 
 ## 문제점
 
